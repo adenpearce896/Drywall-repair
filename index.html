@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why Do Drywall Patches Remain Visible After Painting?</title>
+<meta name="description" content="Drywall patches can stay visible after painting due to uneven sanding, texture differences, poor priming, or paint absorption. Learn the causes and how to fix them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #000000;
+    --ink: #141414;
+    --text: #2b2b2b;
+    --red: #c8102e;
+    --red-dark: #9e0c24;
+    --white: #ffffff;
+    --line: #e4dfdb;
+    --muted: #b9b9b9;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--black);
+    color: var(--text);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img { max-width: 100%; height: auto; display: block; }
+
+  a { color: var(--red); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
+  a:hover { color: var(--red-dark); }
+  a:focus-visible, .btn:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+
+  /* ---------- Header ---------- */
+  .site-header {
+    background: var(--black);
+    border-bottom: 1px solid #262626;
+    padding: 22px 24px;
+  }
+  .site-header .inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .site-header img { width: 240px; max-width: 70%; }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    background: var(--black);
+    padding: 88px 24px 96px;
+    position: relative;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 6px;
+    background: var(--red);
+  }
+  .hero .inner {
+    max-width: 920px;
+    margin: 0 auto;
+    padding-left: 32px;
+    border-left: 6px solid var(--red);
+  }
+  .hero h1 {
+    margin: 0;
+    color: var(--white);
+    font-weight: 800;
+    font-size: clamp(2rem, 4.6vw, 3.6rem);
+    line-height: 1.16;
+    letter-spacing: -0.015em;
+    max-width: 24ch;
+  }
+
+  /* ---------- Article ---------- */
+  .article-wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 64px 24px 24px;
+  }
+
+  .card {
+    background: var(--white);
+    border-radius: 4px;
+    padding: 44px 48px;
+    margin-bottom: 28px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.06), 0 18px 40px rgba(0,0,0,0.5);
+  }
+  .card > :last-child { margin-bottom: 0; }
+
+  .card.intro {
+    border-top: 6px solid var(--red);
+    font-size: 1.06rem;
+  }
+
+  .card h2 {
+    margin: 0 0 22px;
+    color: var(--black);
+    font-weight: 800;
+    font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--line);
+    position: relative;
+  }
+  .card h2::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: -2px;
+    width: 64px; height: 2px;
+    background: var(--red);
+  }
+
+  .card h3 {
+    margin: 0 0 10px;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 1.08rem;
+    line-height: 1.45;
+  }
+
+  .card p { margin: 0 0 18px; }
+
+  .card ul {
+    margin: 4px 0 22px;
+    padding: 0;
+    list-style: none;
+  }
+  .card ul li {
+    position: relative;
+    padding: 12px 0 12px 34px;
+    border-bottom: 1px solid var(--line);
+  }
+  .card ul li:last-child { border-bottom: 0; }
+  .card ul li::before {
+    content: "";
+    position: absolute;
+    left: 4px; top: 22px;
+    width: 12px; height: 12px;
+    background: var(--red);
+    transform: rotate(45deg);
+  }
+
+  /* ---------- Internal Linking (Premium Card) ---------- */
+  .related-card {
+    position: relative;
+    display: block;
+    background: linear-gradient(135deg, #131313 0%, #1c1c1c 52%, #2b0a11 100%);
+    border: 1px solid #2c2c2c;
+    border-left: 6px solid var(--red);
+    border-radius: 6px;
+    padding: 46px 48px;
+    margin: 48px 0 30px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.55);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+  .related-card::before {
+    content: "";
+    position: absolute;
+    top: -140px; right: -140px;
+    width: 340px; height: 340px;
+    background: radial-gradient(circle, rgba(200,16,46,0.38) 0%, rgba(200,16,46,0) 70%);
+    pointer-events: none;
+  }
+  .related-card::after {
+    content: "";
+    position: absolute;
+    left: 48px; bottom: 0;
+    width: 0; height: 3px;
+    background: var(--red);
+    transition: width 0.35s ease;
+    z-index: 2;
+  }
+  .related-card:hover { transform: translateY(-4px); box-shadow: 0 30px 70px rgba(0,0,0,0.7); border-color: #3a3a3a; }
+  .related-card:hover::after { width: calc(100% - 96px); }
+  .related-card:hover .related-title { color: var(--white); }
+  .related-card:hover .related-cta { background: var(--red); color: var(--white); border-color: var(--red); }
+  .related-card:hover .related-cta .arrow { transform: translateX(6px); }
+
+  .related-eyebrow {
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 18px;
+    color: var(--red);
+    font-weight: 800;
+    font-size: 0.74rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+  .related-eyebrow::before {
+    content: "";
+    width: 9px; height: 9px;
+    background: var(--red);
+    transform: rotate(45deg);
+  }
+  .related-title {
+    position: relative;
+    z-index: 2;
+    margin: 0 0 14px;
+    color: var(--white);
+    font-weight: 800;
+    font-size: clamp(1.25rem, 2.4vw, 1.7rem);
+    line-height: 1.32;
+    letter-spacing: -0.01em;
+    max-width: 32ch;
+    transition: color 0.25s ease;
+  }
+  .related-text {
+    position: relative;
+    z-index: 2;
+    margin: 0 0 26px;
+    color: #c9c9c9;
+    font-weight: 400;
+    font-size: 0.98rem;
+    line-height: 1.75;
+    max-width: 62ch;
+  }
+  .related-cta {
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--red);
+    border-radius: 3px;
+    padding: 13px 26px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  }
+  .related-cta .arrow {
+    display: inline-block;
+    transition: transform 0.25s ease;
+    font-size: 1.05rem;
+    line-height: 1;
+  }
+
+  .related-link {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    font-size: 0;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  .related-link:focus-visible {
+    outline: 3px solid var(--red);
+    outline-offset: 4px;
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq-title {
+    color: var(--white);
+    font-weight: 800;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    margin: 56px 0 28px;
+    padding-left: 18px;
+    border-left: 6px solid var(--red);
+    line-height: 1.25;
+  }
+  .faq-item {
+    background: var(--white);
+    border-radius: 4px;
+    padding: 28px 32px;
+    margin-bottom: 18px;
+    border-left: 6px solid var(--red);
+  }
+  .faq-item p { margin: 0; }
+
+  /* ---------- Conclusion ---------- */
+  .conclusion {
+    background: var(--white);
+    border-radius: 4px;
+    padding: 44px 48px;
+    margin: 40px 0 28px;
+    border-bottom: 6px solid var(--red);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.5);
+  }
+  .conclusion h2 {
+    margin: 0 0 22px;
+    color: var(--black);
+    font-weight: 800;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+  }
+  .conclusion p { margin: 0 0 18px; }
+  .conclusion p:last-child { margin-bottom: 0; }
+
+  /* ---------- Map ---------- */
+  .map-section {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 24px 24px 72px;
+  }
+  .map-card {
+    background: var(--white);
+    border-radius: 4px;
+    padding: 36px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.5);
+  }
+  .map-card h2 {
+    margin: 0 0 8px;
+    color: var(--black);
+    font-weight: 800;
+    font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+  }
+  .map-card .address {
+    margin: 0 0 22px;
+    font-weight: 500;
+    color: var(--text);
+  }
+  .map-frame {
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden;
+    line-height: 0;
+  }
+  .map-frame iframe {
+    width: 100%;
+    height: 420px;
+    border: 0;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 24px;
+    background: var(--red);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 3px;
+    transition: background 0.2s ease;
+  }
+  .btn:hover { background: var(--red-dark); color: var(--white); }
+
+  /* ---------- Footer ---------- */
+  .site-footer {
+    background: var(--black);
+    border-top: 6px solid var(--red);
+    padding: 48px 24px 40px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.9;
+  }
+  .site-footer img { width: 200px; margin: 0 auto 22px; }
+  .site-footer .name { color: var(--white); font-weight: 700; font-size: 1rem; margin: 0; }
+  .site-footer p { margin: 0; }
+  .site-footer a { color: var(--white); font-weight: 500; text-decoration: none; }
+  .site-footer a:hover { color: var(--red); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 720px) {
+    .hero { padding: 56px 20px 64px; }
+    .hero .inner { padding-left: 20px; border-left-width: 5px; }
+    .article-wrap { padding: 40px 16px 16px; }
+    .card, .conclusion { padding: 30px 22px; }
+    .related-card { padding: 32px 24px; margin: 36px 0 24px; }
+    .related-card::after { left: 24px; }
+    .related-card:hover::after { width: calc(100% - 48px); }
+    .related-cta { width: 100%; justify-content: center; }
+    .faq-item { padding: 22px 20px; }
+    .map-section { padding: 16px 16px 56px; }
+    .map-card { padding: 24px 18px; }
+    .map-frame iframe { height: 320px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .btn, .related-card, .related-card::after, .related-cta, .related-cta .arrow { transition: none; }
+    .related-card:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <img src="https://hdpaintingroofing.com/images/logo/hd-logo-wide-light.png" alt="HD Painting &amp; Roofing LLC logo" width="240">
+  </div>
+</header>
+
+<section class="hero">
+  <div class="inner">
+    <h1>Why Do Drywall Patches Remain Visible After Painting?</h1>
+  </div>
+</section>
+
+<main>
+<article class="article-wrap">
+
+  <div class="card intro">
+    <p>Fresh paint should create a smooth and consistent finish across interior walls. However, homeowners sometimes notice patches that look darker, lighter, rougher, or shinier than the surrounding surface. These differences can remain visible even after several coats of paint. The problem often comes from poor surface preparation, uneven textures, incorrect primer application, or differences in paint absorption. Homeowners seeking <a href="https://maps.app.goo.gl/qtrs9dqx29LfC86B7" target="_blank" rel="noopener"><strong>Drywall repair in Oshkosh WI</strong></a> should understand why these defects occur before starting another repair. Identifying the actual cause helps prevent repeated work and creates a more uniform finish.</p>
+  </div>
+
+  <section class="card">
+    <h2>1. Uneven Surface Preparation Before Painting</h2>
+    <p>Surface preparation plays a major role in the appearance of repaired drywall. When a damaged area receives a patch, the compound must blend smoothly with the existing wall. If the edges remain raised or the repaired area sits below the surrounding surface, paint can highlight these differences.</p>
+    <p>Poor sanding often causes visible transitions between the patch and the original wall. Even small ridges can create shadows when natural light falls across the surface. These imperfections may become more noticeable after applying a fresh coat of paint.</p>
+    <p>Proper preparation involves removing loose material and applying joint compound evenly. Once the compound dries, the repaired area should be sanded carefully until the transition feels smooth. Painters should also remove sanding dust before applying primer.</p>
+    <p>HD Painting &amp; Roofing LLC understands the importance of preparing surfaces before painting. Careful preparation helps create a consistent foundation and reduces the chance of visible repair marks.</p>
+  </section>
+
+  <section class="card">
+    <h2>2. Why Drywall Compound Absorbs Paint Differently</h2>
+    <p>Joint compound and existing painted drywall do not always absorb paint at the same rate. Fresh compound is usually more porous than a previously painted surface. As a result, it may absorb more liquid from the new coating.</p>
+    <p>This difference can create a dull or uneven appearance across the repaired area. The patch may look different even when the painter uses the same paint color and applies it evenly.</p>
+    <p>Applying finish paint directly to unprimed joint compound often increases this problem. The surrounding wall already has a sealed coating, while the repair remains more absorbent.</p>
+    <p>A suitable drywall primer or sealer helps regulate absorption across the repaired area. This creates a more consistent surface for the finish coat. Homeowners should allow the primer to dry according to the manufacturer's instructions before painting.</p>
+    <p>Proper priming is especially important when repairs cover large areas or involve several layers of joint compound.</p>
+  </section>
+
+  <section class="card">
+    <h2>3. Incorrect Primer Application</h2>
+    <p>Primer helps prepare repaired drywall for a uniform finish. However, using the wrong product or applying it incorrectly can leave patches visible after painting.</p>
+    <p>Some primers are designed for bare drywall and joint compound. Others help block stains or improve adhesion on difficult surfaces. Choosing a product that does not match the repair can produce inconsistent results.</p>
+    <p>Uneven primer coverage may also create differences in sheen and color. If some areas receive a heavy coat while others receive very little, the finish paint may look inconsistent.</p>
+    <p>Painters should select a primer suited to the surface and follow the recommended application method. The product should cover the repaired compound and blend appropriately with the surrounding wall.</p>
+    <p>For larger repairs, priming the entire wall may produce a more consistent result than spot priming alone. The best approach depends on the wall condition, existing finish, and paint system.</p>
+  </section>
+
+  <section class="card">
+    <h2>4. Differences in Wall Texture</h2>
+    <p>A drywall patch can appear visible because its texture does not match the original wall. Even when the surface feels smooth, small differences in texture can change how light reflects from it.</p>
+    <p>Some walls have a light orange peel texture, while others have a knockdown finish or a smooth surface. Applying compound without reproducing the surrounding pattern may leave a noticeable repair.</p>
+    <p>Texture differences can become especially obvious under strong daylight or overhead lighting. A patch may blend well from one angle but stand out when viewed from another direction.</p>
+    <p>Matching texture requires the right tools and application technique. Depending on the wall, a professional may use a sponge, roller, spray equipment, or other suitable tools to reproduce the existing finish.</p>
+    <p>Before painting, homeowners should inspect the repaired area under different lighting conditions. Correcting texture problems before applying the finish coat usually produces better results than trying to hide them with extra paint.</p>
+  </section>
+
+  <section class="card">
+    <h2>5. Paint Sheen and Color Differences</h2>
+    <p>Paint sheen affects how light reflects from a wall. Flat paint absorbs more light, while satin and semi gloss finishes reflect more light. Because of these differences, a drywall patch may remain visible when the repaired area has a different sheen from the surrounding surface.</p>
+    <p>Color differences can create a similar problem. Paint may appear lighter or darker when the existing coating has faded, become dirty, or changed over time.</p>
+    <p>Using the original paint color does not always guarantee a perfect match. Different batches, application methods, and surface conditions can influence the final appearance.</p>
+    <p>Homeowners should identify the original paint type and sheen before beginning repairs. Testing the selected paint on a small area can reveal potential differences before the entire wall is coated.</p>
+    <p>When a patch remains visible despite proper preparation, repainting the full wall may create a more uniform appearance.</p>
+  </section>
+
+  <section class="card">
+    <h2>6. Poor Sanding and Raised Patch Edges</h2>
+    <p>Sanding removes ridges and helps blend joint compound into the surrounding wall. However, both insufficient and excessive sanding can create problems.</p>
+    <p>If the compound is not sanded enough, raised edges may remain visible beneath the paint. These ridges can cast shadows and make the repair look unfinished.</p>
+    <p>Excessive sanding can expose drywall paper or damage the surrounding surface. It may also create shallow depressions that require additional compound.</p>
+    <p>A good repair uses several controlled steps rather than aggressive sanding at the end. Compound should be applied in thin layers, with enough drying time between applications. Each layer can extend slightly farther beyond the previous one to create a gradual transition.</p>
+    <p>After sanding, the surface should feel even when checked by hand. A bright work light placed at an angle can help reveal imperfections that ordinary room lighting may hide.</p>
+  </section>
+
+  <section class="card">
+    <h2>7. Applying Paint Before the Repair Is Fully Dry</h2>
+    <p>Joint compound needs sufficient time to dry before primer and paint are applied. When a repair remains damp, the finish may dry unevenly or develop discoloration.</p>
+    <p>Drying time depends on the compound type, layer thickness, room temperature, and humidity. Thick applications often need longer than thin coats.</p>
+    <p>Painting too soon can also trap moisture beneath the coating. In some cases, this may contribute to cracking, peeling, or other finish problems.</p>
+    <p>Homeowners should follow the compound manufacturer's drying instructions rather than relying only on the surface appearance. A repair that looks dry on the outside may still contain moisture beneath the surface.</p>
+    <p>Good ventilation can help maintain suitable drying conditions, but it cannot replace the required drying time. Allowing each repair layer to dry properly creates a more reliable foundation for primer and paint.</p>
+  </section>
+
+  <section class="card">
+    <h2>8. Using the Wrong Painting Technique</h2>
+    <p>Even a well prepared drywall patch can remain visible if the paint application is inconsistent. Different roller textures, pressure, and paint thickness can change the final appearance.</p>
+    <p>For example, a small patch may receive paint from a brush while the surrounding wall has a roller finish. This difference can create a subtle texture variation that becomes visible after drying.</p>
+    <p>Applying multiple coats only over the patch can also create a noticeable boundary. The repaired area may develop a different sheen or build up more paint than the rest of the wall.</p>
+    <p>Using suitable tools and maintaining consistent application techniques helps reduce these differences. Painters should follow the paint manufacturer's coverage recommendations and allow each coat to dry fully.</p>
+    <p>For many repairs, applying a suitable primer followed by repainting the full wall produces a better result than repeatedly touching up a small spot.</p>
+  </section>
+
+  <section class="card">
+    <h2>9. How Moisture and Previous Damage Affect Repairs</h2>
+    <p>Sometimes, visible drywall patches point to an underlying problem rather than a painting mistake. Water stains, recurring dampness, and damaged drywall can affect how a repair looks after painting.</p>
+    <p>A leak may leave discoloration that returns through fresh paint. Moisture can also weaken drywall paper and joint compound, causing the repaired surface to deteriorate.</p>
+    <p>Before repairing these areas, homeowners should identify and correct the source of water. If roof damage is responsible, appropriate <strong>Roofing services</strong> may help prevent further water intrusion. <strong>Storm Damage Roof Repair in Oshkosh WI</strong> may also be necessary when severe weather damages roofing materials and allows water into the home.</p>
+    <p>After addressing the source, damaged drywall may need to be removed or repaired. A suitable stain blocking primer can help with remaining discoloration when the surface is dry and stable.</p>
+    <p>Proper moisture control protects both the repair and the final paint finish.</p>
+  </section>
+
+  <section class="card">
+    <h2>10. When Professional Drywall Repair Makes a Difference</h2>
+    <p>Visible patches often result from several small problems rather than one major mistake. Uneven compound, poor sanding, incorrect primer, and inconsistent paint application can combine to produce an obvious repair.</p>
+    <p>Professional assessment can help identify which step needs correction. An experienced contractor can inspect the wall, match its texture, prepare the surface, and select suitable primer and paint.</p>
+    <p>HD Painting &amp; Roofing LLC provides painting and related home improvement services for property owners. Its approach to <a href="http://hdpaintingroofing.com/" target="_blank" rel="noopener">Home Painting</a> includes attention to surface condition and finish quality. <strong>Exterior &amp; Interior painting</strong> also requires suitable preparation because different surfaces present different challenges.</p>
+    <p>For homeowners who need <strong>Drywall repair</strong>, professional help can be useful when previous patches remain visible or when damaged areas require extensive work. Addressing the cause instead of repeatedly applying paint helps achieve a cleaner, more consistent result.</p>
+  </section>
+
+  <!-- ================= INTERNAL LINKING CARD ================= -->
+  <div class="related-card">
+    <p class="related-eyebrow">Related Reading</p>
+    <h3 class="related-title">Why Does Exterior and Interior Paint Fail Even When Premium Paint Products Are Used?</h3>
+    <p class="related-text">Even high quality paint can peel, crack, blister, or fade when surfaces are poorly prepared or conditions are unsuitable. Explore the most common causes of paint failure and how to prevent them.</p>
+    <span class="related-cta">Read the Full Article <span class="arrow" aria-hidden="true">&rarr;</span></span>
+    <a class="related-link" href="https://exterior-interior-painting.vercel.app/" target="_blank" rel="noopener" aria-label="Read the article: Why Does Exterior and Interior Paint Fail Even When Premium Paint Products Are Used?"></a>
+  </div>
+
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <h3>1. Why can I still see drywall patches after painting?</h3>
+    <p>Patches often remain visible because of uneven sanding, different surface textures, poor priming, or differences in paint absorption. Correcting the surface and using a suitable primer can improve the finish.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>2. Should I prime drywall patches before painting?</h3>
+    <p>Yes. Fresh joint compound is porous and can absorb paint differently from the surrounding wall. A suitable primer helps create more consistent absorption and appearance.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>3. Can extra coats of paint hide drywall patches?</h3>
+    <p>Additional coats may improve coverage, but they cannot correct raised edges, uneven texture, or poor surface preparation. These issues should be repaired before applying more paint.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>4. Why does a drywall patch look shiny after painting?</h3>
+    <p>A shiny patch may result from differences in paint sheen, surface absorption, or application technique. Proper priming and consistent paint application can help reduce the contrast.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>5. Should I repaint the entire wall after drywall repair?</h3>
+    <p>Repainting the entire wall often helps when spot repairs leave visible differences in color or sheen. The best choice depends on the existing paint condition and the size of the repaired area.</p>
+  </div>
+
+  <section class="conclusion">
+    <h2>Conclusion</h2>
+    <p>Drywall patches remain visible after painting when the repaired surface differs from the surrounding wall in texture, absorption, smoothness, or sheen. Poor sanding, insufficient drying, and incorrect primer application can also affect the final result. Addressing these issues before painting helps create a smooth and consistent finish.</p>
+    <p>Homeowners seeking <strong>Drywall repair in Oshkosh WI</strong> should focus on proper preparation rather than relying on extra paint to hide imperfections. <a href="http://hdpaintingroofing.com/" target="_blank" rel="noopener">HD Painting &amp; Roofing LLC</a> can help address drywall and painting needs with attention to surface quality and long term results. With careful repairs and suitable painting methods, patched walls can blend more naturally with the rest of the room.</p>
+  </section>
+
+</article>
+
+<section class="map-section" aria-labelledby="find-us">
+  <div class="map-card">
+    <h2 id="find-us">Find Us on Google Maps</h2>
+    <p class="address">632 Jefferson St, Oshkosh, WI 54901, United States</p>
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.7713200331987!2d-88.5361796!3d44.0231613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f426d8a5aa62b41%3A0x878e24653906c1d1!2sHD%20Painting%20%26%20Roofing%20LLC!5e1!3m2!1sen!2s!4v1791569493772!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="HD Painting &amp; Roofing LLC on Google Maps"></iframe>
+    </div>
+    <a class="btn" href="tel:+19205008214">Call (920) 500-8214</a>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <img src="https://hdpaintingroofing.com/images/logo/hd-logo-wide-light.png" alt="HD Painting &amp; Roofing LLC logo" width="200">
+  <p class="name">HD Painting &amp; Roofing LLC</p>
+  <p>632 Jefferson St, Oshkosh, WI 54901, United States</p>
+  <p>Phone: <a href="tel:+19205008214">(920) 500-8214</a></p>
+  <p>Email: <a href="mailto:hdpaintingroofing@gmail.com">hdpaintingroofing@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
